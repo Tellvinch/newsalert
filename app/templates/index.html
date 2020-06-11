@@ -1,14 +1,40 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best news website online </title>
-        {% endif %}
-    </head>
-    <body>
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
 
-    </body>
-</htm
+
+<!-- Content block -->
+{% block content %}
+
+    <h3>General news</h3>
+    <ol>
+      {{ macro.displayNewsList(general)}}
+    </ol>
+
+    <h3>Science news</h3>
+    <ol>
+      {{ macro.displayNewsList(science)}}
+    </ol>
+
+    <h3>Entertainment news</h3>
+    <ol>
+      {{ macro.displayNewsList(entertainment)}}
+    </ol>
+
+    <h3>Health news</h3>
+    <ol>
+      {{ macro.displayNewsList(health)}}
+    </ol>
+
+    <h3>Technology news</h3>
+    <ol>
+      {{ macro.displayNewsList(technology)}}
+    </ol>
+
+    <h3>Sports news</h3>
+    <ol>
+      {{ macro.displayNewsList(sports)}} -
+    </ol>
+    
+
+    {% endblock%}
+ 
