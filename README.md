@@ -1,7 +1,7 @@
 
 # newsalert
 a web application that provides the user with the latest trending news with receipts.
-[Heroku [link](htttps://git.heroku.com/newsalert01.git)
+Heroku [link](htttps://git.heroku.com/newsalert01.git)
 
 ## Setup/Installation Requirements
 * follow this [link](https://github.com/Tellvinch/newsalert)
