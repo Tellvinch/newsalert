@@ -1,14 +1,15 @@
-from app import app
 import urllib.request,json
-from .models import news
-
-News = news.News
+from .models import News
 
 # Getting api key
-api_key = app.config['NEWS_API_KEY']
-
+api_key = None
 # Getting the movie base url
-base_url = app.config["NEWS_API_BASE_URL"]
+base_url = None
+
+def configure_request(app):
+    global api_key,base_url
+    api_key = app.config['NEWS_API_KEY']
+    base_url = app.config['NEWS_API_BASE_URL']
 
 def get_newss(category):
     '''
@@ -63,7 +64,7 @@ def get_news(id):
         news_details_response = json.loads(news_details_data)
 
         news_object = None
-        if news_details_response['news']:
+        if news_details_response:
             id = news_details_response.get('id')
             name = news_details_response.get('name')
             description = news_details_response.get('description')
