@@ -1,4 +1,4 @@
-# newsalert
+# NewsAlert
 a web application that provides the user with the latest trending news with receipts.
 Heroku [link](https://newsalert01.herokuapp.com/)
 
