@@ -1,6 +1,5 @@
 import unittest
-# Import class to be tested
-# from app.models import [Class]
+
 
 class Test(unittest.TestCase):
     '''
