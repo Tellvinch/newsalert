@@ -11,5 +11,6 @@ There are no known bugs in this application but if you find any please report
 The application was created using python
 ## Support and contact details
 For any  more information contact at tellvinchimani@gmail.com
-### License
-<a href="https://github.com/Tellvinch">Imani Tellvinch<a>.
+
+### [![MIT license]
+(https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Tellvinch/newsalert/blob/master/license.md)
