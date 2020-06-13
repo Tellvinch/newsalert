@@ -13,4 +13,4 @@ The application was created using python
 For any  more information contact at tellvinchimani@gmail.com
 
 ### LICENSE
-[[license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Tellvinch/newsalert/blobmaster/license.md)
+[[license(https://img.shields.io/badge/License-MIT-blue.svg)]](https://github.com/Tellvinch/newsalert/blobmaster/license.md)
