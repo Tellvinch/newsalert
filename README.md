@@ -12,5 +12,4 @@ The application was created using python
 ## Support and contact details
 For any  more information contact at tellvinchimani@gmail.com
 
-### LICENSE
-[[license(https://img.shields.io/badge/License-MIT-blue.svg)]](https://github.com/Tellvinch/newsalert/blobmaster/license.md)
+### [![MIT LICENSE].(https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Tellvinch/newsalert/blobmaster/license.md)
