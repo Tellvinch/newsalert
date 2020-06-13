@@ -1,40 +1,27 @@
-{% extends 'base.html'%} {% import 'macros.html' as macro%}
+{% import 'macros.html' as macro%} {% extends 'base.html' %}
 
-{% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-{% endblock %}
 <!-- Content block -->
 {% block content %}
 
-<h3>General news</h3>
-<ol>
-  {{ macro.displayNewsList(general)}}
-</ol>
+<title>{{ title }}</title>
 
-<h3>Science news</h3>
-<ol>
-  {{ macro.displayNewsList(science)}}
-</ol>
+<h1 style="text-align: center;"><strong>WELCOME TO NEWS ALERT</strong></h1>
 
-<h3>Entertainment news</h3>
-<ol>
-  {{ macro.displayNewsList(entertainment)}}
-</ol>
+<div class="row" style="padding-left: 50px;">
+  <div class="col-md-4">
+    <h2><strong>TECHNOLOGY NEWS</strong></h2>
+                {{ macro.displayUpdateList(technology) }}
+  </div>
+  <div class="col-md-4">
+    <h2><strong>BUSINESS NEWS</strong></h2>
+                {{ macro.displayUpdateList(business) }}
+  </div>
 
-<h3>Health news</h3>
-<ol>
-  {{ macro.displayNewsList(health)}}
-</ol>
 
-<h3>Technology news</h3>
-<ol>
-  {{ macro.displayNewsList(technology)}}
-</ol>
+  <div class="col-md-4">
+    <h2><strong>ENTERTAINMENT NEWS</strong></h2>
+                {{ macro.displayUpdateList(entertainment) }}
+  </div>
 
-<h3>Sports news</h3>
-<ol>
-  {{ macro.displayNewsList(sports)}} -
-</ol>
-
-{% endblock%}
+</div>
+{% endblock %}

@@ -1,16 +1,25 @@
-{% macro displayNewsList(news_list) %}
+{% macro displayUpdateList(update_results_list) %}
 
-    {% for news in news_list %}
-        <div class="col-md-8">
-            <li>
-                <strong>{{news.name}}</strong>
-                <br>
-                {{news.description}}
-                <br>
-                <a href="/news/{{news.url}}">Visit site</a>
-            </li>
+    {% for update in update_results_list %}
+        <div class="row">
+            <div class="col-md-6 panel panel-primary ">
+                <h1>{{ update.id}}</h1>
+                <a href="/templates/update/{{update.id}}">visit</a>
+            </div>
         </div>
-
     {% endfor %}
 
+{% endmacro %}
+{% macro displayArticles(articles_list) %}
+    {% for article in articles_list %}
+            <div class="row font">
+               <div class="col-md-6" ><img src="{{article.image}}" style="display: inline-block; height:300px;width: 600px; ">
+               </div>
+               <div class="col-md-6 ">
+                   <h3 style="color:#C04000">{{article.title}}</h3><h5>by {{article.author}}</h5>
+                   <p>{{article.description}} <a href="{{article.url}}">Read more...</a></p>
+                   <p><b>Published at {{article.publishedAt}}</b></p>
+               </div>
+           </div>
+    {% endfor %}
 {% endmacro %}

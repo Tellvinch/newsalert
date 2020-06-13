@@ -1,13 +1,21 @@
-class News:
-    '''
-        News class to define source objects
-    '''
+# File for models/classes
+class Article:
+    def __init__(self, id, author, title, description, url, image, date):
+        self.id = id
+        self.author = author
+        self.title = title
+        self.description = description
+        self.url = url  
+        self.image = image
+        self.date = date
 
-    def __init__(self, id, name, description, url, category, language, country):
+
+class News_Update:
+    '''
+    highlight class to define objects
+    '''
+    def __init__(self, id, name, category, url):
         self.id = id
         self.name = name
-        self.description = description
-        self.url = url
         self.category = category
-        self.language = language
-        self.country = country
+        self.url = url
