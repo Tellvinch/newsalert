@@ -12,4 +12,4 @@ The application was created using python
 ## Support and contact details
 For any  more information contact at tellvinchimani@gmail.com
 
-### [LICENSE](https://github.com/Tellvinch/newsalert/blob/master/license.md)
+### [MIT LICENSE](https://github.com/Tellvinch/newsalert/blob/master/license.md)
